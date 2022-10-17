@@ -24,7 +24,7 @@ def example_graph():
 
 
 step_ated_job = example_graph.to_job(
-    name="step_isolated_job",
+    name="step_ated_job",
     resource_defs={"s3": s3_resource, "io_manager": s3_pickle_io_manager},
     executor_def=k8s_job_executor,
     config=config_from_files(
