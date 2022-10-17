@@ -59,4 +59,4 @@ single_pod_job = example_graph.to_job(
 
 @repository
 def example_repo():
-    return [single_pod_job, step_isolated_job, celery_step_isolated_job]
+    return [single_pod_job, step_ated_job, celery_step_isolated_job]
