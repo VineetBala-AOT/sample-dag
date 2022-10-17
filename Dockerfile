@@ -15,4 +15,4 @@ RUN \
 # ==> Add user code layer
 # Example pipelines
 COPY build_cache/ /
-RUN chmod -R g+rwX /opt/dagster
+RUN chmod -R g+rwX /opt
