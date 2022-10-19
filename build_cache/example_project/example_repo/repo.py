@@ -36,6 +36,10 @@ class WarehouseConnection:
 
 
 def get_met_analytics_db_creds() -> DBConnection:
+    print("met analytics db user name " + os.getenv("MET_ANALYTICS_DB_USER"))
+    print("met analytics db db " + os.getenv("MET_ANALYTICS_DB_DB"))
+    print("met analytics db host " + os.getenv("MET_ANALYTICS_DB_HOST"))
+    print("met analytics db port " + os.getenv("MET_ANALYTICS_DB_PORT"))    
     return DBConnection(
         user=os.getenv("MET_ANALYTICS_DB_USER", ""),
         password=os.getenv("MET_ANALYTICS_DB_PASSWORD", ""),
@@ -46,6 +50,10 @@ def get_met_analytics_db_creds() -> DBConnection:
 
 
 def get_met_db_creds() -> DBConnection:
+    print("met db user name " + os.getenv("MET_DB_USER"))
+    print("met db db " + os.getenv("MET_DB_DB"))
+    print("met db host " + os.getenv("MET_DB_HOST"))
+    print("met db port " + os.getenv("MET_DB_PORT"))
     return DBConnection(
         user=os.getenv("MET_DB_USER", ""),
         password=os.getenv("MET_DB_PASSWORD", ""),
